@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Developer Insights</title>
+    <meta
+      name="description"
+      content="Developer blog covering JavaScript, React, CSS, and web development best practices."
+    />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/assets/images/mine.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body data-theme="light">
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">PORTFOLIO</a>
+          <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#projects">Work</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li>
+              <button
+                class="theme-toggle"
+                id="theme-toggle"
+                aria-label="Toggle dark mode"
+              >
+                <i class="fa-solid fa-moon theme-icon"></i>
+              </button>
+            </li>
+          </ul>
+          <button class="mobile-nav-toggle" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main style="padding-top: 100px">
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Developer Blog</h2>
+          <div class="projects-filter" id="blog-filters"></div>
+          <div class="blog-grid" id="blog-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="src/js/blog.js"></script>
+  </body>
+</html>
