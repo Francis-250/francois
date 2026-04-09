@@ -254,7 +254,7 @@ export const experiences = [
 export const testimonials = [
   {
     id: 1,
-    name: "Instructor Name",
+    name: "Ishimwe Eric",
     position: "IT Lecturer",
     company: "University of RP Kigali College",
     text: "A dedicated student with strong passion for web development. Shows great progress in learning modern technologies like Next.js and Prisma. Consistently delivers quality work and demonstrates problem-solving skills.",
