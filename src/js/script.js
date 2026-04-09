@@ -272,63 +272,63 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const setupAIRecommendation = () => {
-    const projectsSection = document.getElementById("projects");
-    if (projectsSection && !document.getElementById("ai-container")) {
-      const aiDiv = document.createElement("div");
-      aiDiv.id = "ai-container";
-      aiDiv.className = "container";
-      aiDiv.style.marginTop = "4rem";
-      aiDiv.innerHTML = `
-                <div style="background-color: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); text-align: center;">
-                    <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-robot"></i> AI Project Guide</h3>
-                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Tell me your interests, and I'll recommend the best project to explore first!</p>
-                    <input type="text" id="ai-input" placeholder="e.g. I like backend development or e-commerce" style="width: 100%; max-width: 500px; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); margin-bottom: 1rem;">
-                    <br>
-                    <button id="ai-btn" class="btn btn-primary">Get Recommendation</button>
-                    <div id="ai-result" style="margin-top: 1.5rem; font-weight: 600; color: var(--accent);"></div>
-                </div>
-            `;
-      projectsSection.appendChild(aiDiv);
+  // const setupAIRecommendation = () => {
+  //   const projectsSection = document.getElementById("projects");
+  //   if (projectsSection && !document.getElementById("ai-container")) {
+  //     const aiDiv = document.createElement("div");
+  //     aiDiv.id = "ai-container";
+  //     aiDiv.className = "container";
+  //     aiDiv.style.marginTop = "4rem";
+  //     aiDiv.innerHTML = `
+  //               <div style="background-color: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); text-align: center;">
+  //                   <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-robot"></i> AI Project Guide</h3>
+  //                   <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Tell me your interests, and I'll recommend the best project to explore first!</p>
+  //                   <input type="text" id="ai-input" placeholder="e.g. I like backend development or e-commerce" style="width: 100%; max-width: 500px; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); margin-bottom: 1rem;">
+  //                   <br>
+  //                   <button id="ai-btn" class="btn btn-primary">Get Recommendation</button>
+  //                   <div id="ai-result" style="margin-top: 1.5rem; font-weight: 600; color: var(--accent);"></div>
+  //               </div>
+  //           `;
+  //     projectsSection.appendChild(aiDiv);
 
-      const aiBtn = document.getElementById("ai-btn");
-      const aiInput = document.getElementById("ai-input");
-      const aiResult = document.getElementById("ai-result");
+  //     const aiBtn = document.getElementById("ai-btn");
+  //     const aiInput = document.getElementById("ai-input");
+  //     const aiResult = document.getElementById("ai-result");
 
-      if (aiBtn) {
-        aiBtn.addEventListener("click", () => {
-          const input = aiInput.value.toLowerCase();
-          if (
-            input.includes("backend") ||
-            input.includes("system") ||
-            input.includes("stock") ||
-            input.includes("inventory")
-          ) {
-            aiResult.textContent =
-              '🎯 Based on your interest, check out the "Stock Management System" project!';
-          } else if (
-            input.includes("ecommerce") ||
-            input.includes("store") ||
-            input.includes("shop") ||
-            input.includes("payment")
-          ) {
-            aiResult.textContent =
-              '🛒 I recommend exploring the "E-Commerce Platform" project.';
-          } else if (
-            input.includes("frontend") ||
-            input.includes("ui") ||
-            input.includes("design")
-          ) {
-            aiResult.textContent =
-              '🎨 Both projects have great frontend! Start with the "E-Commerce Platform" for UI practice.';
-          } else {
-            aiResult.textContent =
-              '💡 Both projects show strong full-stack skills. Try the "E-Commerce Platform" first!';
-          }
-        });
-      }
-    }
-  };
+  //     if (aiBtn) {
+  //       aiBtn.addEventListener("click", () => {
+  //         const input = aiInput.value.toLowerCase();
+  //         if (
+  //           input.includes("backend") ||
+  //           input.includes("system") ||
+  //           input.includes("stock") ||
+  //           input.includes("inventory")
+  //         ) {
+  //           aiResult.textContent =
+  //             '🎯 Based on your interest, check out the "Stock Management System" project!';
+  //         } else if (
+  //           input.includes("ecommerce") ||
+  //           input.includes("store") ||
+  //           input.includes("shop") ||
+  //           input.includes("payment")
+  //         ) {
+  //           aiResult.textContent =
+  //             '🛒 I recommend exploring the "E-Commerce Platform" project.';
+  //         } else if (
+  //           input.includes("frontend") ||
+  //           input.includes("ui") ||
+  //           input.includes("design")
+  //         ) {
+  //           aiResult.textContent =
+  //             '🎨 Both projects have great frontend! Start with the "E-Commerce Platform" for UI practice.';
+  //         } else {
+  //           aiResult.textContent =
+  //             '💡 Both projects show strong full-stack skills. Try the "E-Commerce Platform" first!';
+  //         }
+  //       });
+  //     }
+  //   }
+  // };
 
   const mobileToggle = document.querySelector(".mobile-nav-toggle");
   const navLinks = document.querySelector(".nav-links");
