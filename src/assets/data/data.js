@@ -105,7 +105,7 @@ export const projects = [
       "TypeScript",
     ],
     role: "Full Stack Developer",
-    liveLink: "https://example.com",
+    liveLink: "https://davesolution.vercel.app/",
     githubLink: "https://github.com/Francis-250/davesolutions",
     featured: true,
     year: "2026",
