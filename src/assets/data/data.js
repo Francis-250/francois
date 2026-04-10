@@ -264,7 +264,7 @@ export const testimonials = [
 ];
 
 export const contactInfo = {
-  email: "munyankindif0@egmail.com",
+  email: "munyankindif0@gmail.com",
   github: "https://github.com/francis-250",
   linkedin: "https://linkedin.com/in/username",
   location: "Kigali, Rwanda",
